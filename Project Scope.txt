@@ -1,0 +1,94 @@
+### **Instruction, Scope, and Requirements for Grocery Store Simulation Project**
+
+---
+
+### **Project Scope**
+
+This project simulates a grocery store where customers can:
+
+1. Select items from a predefined list.
+2. View the total cost of their shopping cart.
+3. Choose a payment method (cash or card).
+4. Generate a receipt saved as a text file.
+
+The program reinforces basic Java concepts such as object-oriented programming, methods, arrays, loops, and file handling.
+
+---
+
+### **Requirements**
+
+### **Functional Requirements**
+
+1. **Predefined Item List**:
+    - Create a list of grocery items with a name and price.
+2. **Customer Shopping**:
+    - Allow customers to select items by inputting an item number.
+    - Store selected items in a shopping cart.
+3. **Calculate Total Cost**:
+    - Sum the prices of items in the cart and display the total.
+4. **Checkout Process**:
+    - Prompt the customer to choose a payment method (cash or card).
+5. **Generate Receipt**:
+    - Save the receipt as a text file with the customer’s selected items, total cost, and payment method.
+
+---
+
+### **Instructions**
+
+### **Step 1: Define Classes**
+
+1. Create a class called `Item` with attributes:
+    - `name` (String)
+    - `price` (double)
+2. Create a class called `GroceryStore` to manage:
+    - The list of items available.
+    - The shopping process (item selection, checkout, receipt generation).
+
+---
+
+### **Step 2: Predefined Item List**
+
+- Create an `ArrayList` of `Item` objects in `GroceryStore`.
+- Populate it with at least 5 items, each with a name and price.
+
+---
+
+### **Step 3: Handle Item Selection**
+
+- Display the list of items with numbers for selection.
+- Use a loop to allow customers to select multiple items until they choose to finish.
+- Store selected items in a shopping cart (another `ArrayList`).
+
+---
+
+### **Step 4: Calculate Total**
+
+- Write a method in `GroceryStore` to loop through the cart and calculate the total cost.
+- Display the total after the customer finishes shopping.
+
+---
+
+### **Step 5: Checkout Process**
+
+- Ask the customer to choose a payment method (cash or card) using simple prompts.
+- Store the chosen payment method.
+
+---
+
+### **Step 6: Generate Receipt**
+
+- Write a method to create a text file (e.g., `receipt_1.txt`).
+- Include:
+    - The list of items in the cart.
+    - The total cost.
+    - The payment method.
+
+---
+
+### **Expected Output**
+
+- A functional console program where customers can:
+    - View and select items.
+    - See their total cost.
+    - Choose a payment method.
+    - Receive a receipt saved as a text file.
